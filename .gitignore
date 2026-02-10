@@ -1,0 +1,8 @@
+# Oracle Data Modeler local state
+*.local
+
+# Logs
+*.log
+
+# Secrets
+.env

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="categorii_prod_produse_fk" directorySegmentName="seg_0" id="099B499C-1BF6-A9DC-D2FF-E5ACF6A2AB07">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:45:54 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<sourcePk>DE4E4F4F-7427-EE83-BE2B-AED7914FF003</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>include mai multe</nameOnSource>
+<nameOnTarget>apartine exact unei</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6BD9D484-C674-7B97-91E0-7DC4865707B9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8CF5D4A4-4505-FE15-2C8C-23C414841557</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

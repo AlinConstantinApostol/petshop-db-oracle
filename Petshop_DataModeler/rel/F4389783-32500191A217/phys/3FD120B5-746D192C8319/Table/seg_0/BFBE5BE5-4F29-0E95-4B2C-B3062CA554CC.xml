@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="carduri_fidelitate" directorySegmentName="seg_0" id="BFBE5BE5-4F29-0E95-4B2C-B3062CA554CC">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cod_card" id="01942BE3-6EE1-0321-2378-D9C1DE2D46E9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nivel_fidelitate" id="02FBD568-530F-9840-D997-1D4B8638D11D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="client_id" id="1625B032-ED9A-986C-DD49-71C5DDB3521B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status_card" id="5A10C1B6-5696-0ED0-43FA-16120B1998D5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_emitere" id="701EA4B0-CD15-F973-BF5F-2D8EEE1FCD01">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="puncte_acumulate" id="ABA1E50D-5918-AE33-33F4-7C11937E477A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="clienti_carduri_fidelitate_fk" id="35822CD1-EFB4-DCBA-6A0E-1BC0C7FEDA0C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="carduri_fidelitate_PK" id="9892C4AF-BF58-C4DA-21B2-5144088B37E4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="cod_card_UK" id="0FCFB092-169E-FB7D-6F9D-550211AFEBC3">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:19:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3CA000C3-ED14-463E-C1B1-825523D9CC0F" containerWithKeyObject="AB63D26F-D14A-8D55-8885-F559E047BA8F" localFKIndex="61A1B495-ACC6-E7FE-EBE0-E03AA8013641" name="comenzi_detalii_comanda_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>B90E82A5-5545-CCC0-DF5A-F7D7FCDE5356</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<referredTableLongName>comenzi</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>40D442F2-65E5-2435-A983-8444F981470F</referredTableID>
+<keyObject>F1523461-7283-38A4-E1A0-4DC842036FE8</keyObject>
+<referredKeyID>F1523461-7283-38A4-E1A0-4DC842036FE8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>comanda_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

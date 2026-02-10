@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="clienti_carduri_fidelitate_fk" directorySegmentName="seg_0" id="D9C3829D-1D55-729F-F681-01844E5DE4E6">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:27:58 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<sourcePk>71C8718C-B40F-FA78-B4E2-E78E1E170FA7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>au cate un</nameOnSource>
+<nameOnTarget>sunt asociate cu cate unul dintre</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FB6DC7CF-4D97-1787-0F20-A93EABD26A9B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9F47030A-5C5E-D920-BC5B-6531B2B71F6A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

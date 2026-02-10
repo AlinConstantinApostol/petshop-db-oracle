@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="94D35D1B-B9A7-11A1-60C3-6F573CBCA7FB" containerWithKeyObject="DEB50A60-C257-122C-8FA7-AB8104252E90" localFKIndex="5DE3F52C-78F7-2869-A003-006E4A4A374B" name="categorii_prod_produse_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>099B499C-1BF6-A9DC-D2FF-E5ACF6A2AB07</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<referredTableLongName>categorii_prod</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D98415A7-3A61-6108-46CB-197BED772FC7</referredTableID>
+<keyObject>E0F11CB4-4267-545E-5869-BCA328A36B3A</keyObject>
+<referredKeyID>E0F11CB4-4267-545E-5869-BCA328A36B3A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>categorie_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

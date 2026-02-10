@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F47030A-5C5E-D920-BC5B-6531B2B71F6A" name="carduri_fidelitate">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-09 23:48:53 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_card" id="8EDBC036-4E71-0DAB-8395-BD997734F726">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-09 23:50:27 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_emitere" id="B1F9D423-6546-116A-D692-5FFF86E495C2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:08:59 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="puncte_acumulate" id="DD421951-F7CC-4FE5-9FAA-457C59C3EF2F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:09:27 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="puncte_acumulate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_card" id="C64F60B7-9103-A96E-E320-F224625D7DF5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:20:25 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="Activ" description=""/>
+<valueDef value="Expirat" description=""/>
+<valueDef value="Suspendat" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel_fidelitate" id="3B042AED-A811-3907-7BFB-B70AD9ABACAE">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:20:44 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="Bronze" description=""/>
+<valueDef value="Gold" description=""/>
+<valueDef value="Platinum" description=""/>
+<valueDef value="Silver" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_id" id="F7E4738A-FC76-B5A7-26BA-49C02559AE34">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:20:56 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_id1" id="D609D11C-98A1-4C5B-75C9-AFFEAB3BDBFE">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:27:58 UTC</createdTime>
+<generatorID>D9C3829D-1D55-729F-F681-01844E5DE4E6</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="false"/>
+</engineerTo>
+<referedAttribute>2E4B0924-7DB1-4C69-D28E-38EB39D3F6B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1CD73FAD-36CC-B846-381B-929EA707D81F" name="carduri_fidelitate PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-09 23:50:16 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7E4738A-FC76-B5A7-26BA-49C02559AE34</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F635FFD8-3418-1C80-D73E-D89F8A109EBF" name="cod_card UK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:04:31 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<newElementsIDs>8EDBC036-4E71-0DAB-8395-BD997734F726</newElementsIDs>
+<usedAttributes>
+<attributeRef>8EDBC036-4E71-0DAB-8395-BD997734F726</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

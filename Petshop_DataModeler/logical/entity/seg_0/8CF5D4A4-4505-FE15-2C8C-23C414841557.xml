@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8CF5D4A4-4505-FE15-2C8C-23C414841557" name="produse">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 18:10:43 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="produs_id" id="368F6B3A-EA6A-DCF7-DF56-3D175C175206">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 18:11:26 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="EDDBA8F5-D5DF-821E-2635-4A510FDC3387">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 18:13:40 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<constraintName>pret_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantitate" id="74DE2F46-1AF5-D435-DAE7-32A9B37595B4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 18:14:02 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="cod_bare" id="97730B6F-63B3-7359-C0E2-290F97A40C76">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 18:43:38 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cod_bare) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="categorie_id" id="5004C2AD-0774-7407-C910-C2F7EF9E9339">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:45:54 UTC</createdTime>
+<generatorID>099B499C-1BF6-A9DC-D2FF-E5ACF6A2AB07</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<referedAttribute>B7E76566-2568-EF71-0CAC-BB3EF7F3E5EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="63D586CE-DD78-14A6-7F31-2A99E41C9497" name="produse PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 18:16:11 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>368F6B3A-EA6A-DCF7-DF56-3D175C175206</newElementsIDs>
+<usedAttributes>
+<attributeRef>368F6B3A-EA6A-DCF7-DF56-3D175C175206</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EA7A58D3-4C71-5147-3183-80B65A76D358" name="prod_codbare UK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-25 19:11:40 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<newElementsIDs>97730B6F-63B3-7359-C0E2-290F97A40C76</newElementsIDs>
+<usedAttributes>
+<attributeRef>97730B6F-63B3-7359-C0E2-290F97A40C76</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

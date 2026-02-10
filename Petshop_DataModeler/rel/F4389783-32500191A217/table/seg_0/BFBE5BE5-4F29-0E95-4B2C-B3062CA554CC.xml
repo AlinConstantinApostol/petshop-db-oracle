@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFBE5BE5-4F29-0E95-4B2C-B3062CA554CC" name="carduri_fidelitate">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>9F47030A-5C5E-D920-BC5B-6531B2B71F6A</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_card" id="01942BE3-6EE1-0321-2378-D9C1DE2D46E9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>8EDBC036-4E71-0DAB-8395-BD997734F726</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_emitere" id="701EA4B0-CD15-F973-BF5F-2D8EEE1FCD01">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>B1F9D423-6546-116A-D692-5FFF86E495C2</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="puncte_acumulate" id="ABA1E50D-5918-AE33-33F4-7C11937E477A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>DD421951-F7CC-4FE5-9FAA-457C59C3EF2F</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="puncte_acumulate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_card" id="5A10C1B6-5696-0ED0-43FA-16120B1998D5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>C64F60B7-9103-A96E-E320-F224625D7DF5</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="Activ" description=""/>
+<valueDef value="Expirat" description=""/>
+<valueDef value="Suspendat" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_fidelitate" id="02FBD568-530F-9840-D997-1D4B8638D11D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>3B042AED-A811-3907-7BFB-B70AD9ABACAE</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="Bronze" description=""/>
+<valueDef value="Gold" description=""/>
+<valueDef value="Platinum" description=""/>
+<valueDef value="Silver" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="1625B032-ED9A-986C-DD49-71C5DDB3521B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>F7E4738A-FC76-B5A7-26BA-49C02559AE34</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54138820-C76E-FA3C-567B-ACD9CD8DB009" referredColumn="D67BB0F2-7EF5-75CD-D1F9-B656AD6E9A92"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9892C4AF-BF58-C4DA-21B2-5144088B37E4" name="carduri_fidelitate_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>1CD73FAD-36CC-B846-381B-929EA707D81F</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1625B032-ED9A-986C-DD49-71C5DDB3521B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FCFB092-169E-FB7D-6F9D-550211AFEBC3" name="cod_card_UK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>F635FFD8-3418-1C80-D73E-D89F8A109EBF</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01942BE3-6EE1-0321-2378-D9C1DE2D46E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35822CD1-EFB4-DCBA-6A0E-1BC0C7FEDA0C" name="clienti_carduri_fidelitate_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>D9C3829D-1D55-729F-F681-01844E5DE4E6</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1625B032-ED9A-986C-DD49-71C5DDB3521B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

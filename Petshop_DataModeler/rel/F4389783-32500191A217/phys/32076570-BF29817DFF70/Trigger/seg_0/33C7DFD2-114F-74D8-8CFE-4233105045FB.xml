@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_comenzi_data" directorySegmentName="seg_0" id="33C7DFD2-114F-74D8-8CFE-4233105045FB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:51:35 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF :new.data_comanda < SYSDATE THEN
+    RAISE_APPLICATION_ERROR(-20002,
+      'Data comenzii invalida: ' || TO_CHAR(:new.data_comanda, 'DD.MM.YYYY') ||
+      ' trebuie sa fie cel putin data curenta.');
+  END IF;
+END;
+
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>40D442F2-65E5-2435-A983-8444F981470F</table>
+</TriggerOraclev10g>

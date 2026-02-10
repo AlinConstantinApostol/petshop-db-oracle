@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA194D5F-7D62-2B45-3204-0A5C9841CB61" containerWithKeyObject="40D442F2-65E5-2435-A983-8444F981470F" localFKIndex="16437AE4-EDC5-B67B-8DB7-C738858092FD" name="angajati_comenzi_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>6B91C02B-2EAB-1CEF-ABF0-E08CCD44514C</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<referredTableLongName>angajati</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AFD8841A-9F1D-44D3-7B7C-E904F6A3B856</referredTableID>
+<keyObject>B314F2E4-A2B5-1428-635E-93CBEAE7CB7B</keyObject>
+<referredKeyID>B314F2E4-A2B5-1428-635E-93CBEAE7CB7B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>angajat_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

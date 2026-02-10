@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB63D26F-D14A-8D55-8885-F559E047BA8F" name="detalii_comanda">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>A077E453-9C21-52EF-575F-5ACEDBB2D043</generatorID>
+<notes><![CDATA[DETALII_COMANDA este entitate asociativă (PK compus: comanda_id, produs_id).]]></notes>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comanda_id" id="94776E2C-E64C-F780-D81D-B3EC41B7B753">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>551B2246-B853-5FFA-B166-5E0A9013CFA8</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CA000C3-ED14-463E-C1B1-825523D9CC0F" referredColumn="CD791C5C-7F44-DC19-12A6-B92AFA44D2A8"/>
+</associations>
+</Column>
+<Column name="produs_id" id="709347CC-DBB5-9475-9F93-4B8E1B8D2805">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>128F4B89-6128-1B4C-62C4-5C86C7491014</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15D5109B-CF8C-DECC-7FF0-9FAD345FFFE1" referredColumn="3EBF363F-9C0D-0D32-ADC0-5BD3BBBF15BB"/>
+</associations>
+</Column>
+<Column name="cantitate_vand" id="077E169E-CD2B-08CB-7BEC-C7EEFEDA7178">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>AB8E0E16-B138-E58D-E8A3-50F164112F4C</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate_vand BETWEEN 1 AND 10"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2CB69EB-AC61-001D-3DE6-1ED55BFC9EC6" name="detalii_comanda_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>42D6B61E-6B62-C93F-2602-525BC45B0D7C</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94776E2C-E64C-F780-D81D-B3EC41B7B753"/>
+<colUsage columnID="709347CC-DBB5-9475-9F93-4B8E1B8D2805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61A1B495-ACC6-E7FE-EBE0-E03AA8013641" name="comenzi_detalii_comanda_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>B90E82A5-5545-CCC0-DF5A-F7D7FCDE5356</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94776E2C-E64C-F780-D81D-B3EC41B7B753"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B38AD5A-CB5E-1B18-90C0-7C1F76DBDC9D" name="produse_detalii_comanda_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>99FED81E-49B4-6486-C66A-D7E3ACC4E456</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="709347CC-DBB5-9475-9F93-4B8E1B8D2805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEB50A60-C257-122C-8FA7-AB8104252E90" name="produse">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>8CF5D4A4-4505-FE15-2C8C-23C414841557</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="produs_id" id="3EBF363F-9C0D-0D32-ADC0-5BD3BBBF15BB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>368F6B3A-EA6A-DCF7-DF56-3D175C175206</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="94BE0177-5266-ACDE-5B79-F1249ECA4058">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>EDDBA8F5-D5DF-821E-2635-4A510FDC3387</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<constraintName>pret_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantitate" id="82D3EA1B-C439-1507-EA11-7703A244D1DA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>74DE2F46-1AF5-D435-DAE7-32A9B37595B4</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="cod_bare" id="35A39018-E1B4-D741-DBB0-BE90CDE5CF4A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>97730B6F-63B3-7359-C0E2-290F97A40C76</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(cod_bare) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categorie_id" id="281A6806-351F-AA4A-7AB4-1A08180E49AC">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>5004C2AD-0774-7407-C910-C2F7EF9E9339</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94D35D1B-B9A7-11A1-60C3-6F573CBCA7FB" referredColumn="9FC093EA-910A-E3C6-D357-6FD9F34A36EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A6C2C10-77A4-ADAE-7166-2FC4ECF40BCB" name="produse_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>63D586CE-DD78-14A6-7F31-2A99E41C9497</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EBF363F-9C0D-0D32-ADC0-5BD3BBBF15BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83E2F352-FD8D-3898-D41C-CD69AAB564AB" name="prod_codbare_UK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>EA7A58D3-4C71-5147-3183-80B65A76D358</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35A39018-E1B4-D741-DBB0-BE90CDE5CF4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DE3F52C-78F7-2869-A003-006E4A4A374B" name="categorii_prod_produse_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>099B499C-1BF6-A9DC-D2FF-E5ACF6A2AB07</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="281A6806-351F-AA4A-7AB4-1A08180E49AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A077E453-9C21-52EF-575F-5ACEDBB2D043" name="detalii_comanda">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 11:54:09 UTC</createdTime>
+<notes><![CDATA[DETALII_COMANDA este entitate asociativă (PK compus: comanda_id, produs_id).]]></notes>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comanda_id" id="551B2246-B853-5FFA-B166-5E0A9013CFA8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 12:06:24 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="produs_id" id="128F4B89-6128-1B4C-62C4-5C86C7491014">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 16:56:14 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantitate_vand" id="AB8E0E16-B138-E58D-E8A3-50F164112F4C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 12:06:37 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cantitate_vand &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comanda_id1" id="9B40D00B-2657-9EB2-6D29-09B3AE16465B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-09 23:21:34 UTC</createdTime>
+<generatorID>B90E82A5-5545-CCC0-DF5A-F7D7FCDE5356</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<referedAttribute>20399BF6-BEBE-B510-2CBE-E832937BC06C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="produs_id1" id="FE3FCC67-76E5-743C-91AD-653765CDDFDF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:30:42 UTC</createdTime>
+<generatorID>99FED81E-49B4-6486-C66A-D7E3ACC4E456</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<referedAttribute>368F6B3A-EA6A-DCF7-DF56-3D175C175206</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42D6B61E-6B62-C93F-2602-525BC45B0D7C" name="detalii_comanda PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 12:06:35 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>551B2246-B853-5FFA-B166-5E0A9013CFA8</attributeRef>
+<attributeRef>128F4B89-6128-1B4C-62C4-5C86C7491014</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

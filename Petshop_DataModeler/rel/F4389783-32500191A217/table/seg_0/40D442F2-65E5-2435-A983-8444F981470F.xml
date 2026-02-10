@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40D442F2-65E5-2435-A983-8444F981470F" name="comenzi">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>C37510BC-1868-9F7E-E188-5BDDAF5DF6EB</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comanda_id" id="CD791C5C-7F44-DC19-12A6-B92AFA44D2A8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>20399BF6-BEBE-B510-2CBE-E832937BC06C</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_comanda" id="5F3E36BE-3D04-0939-F417-D03588231E49">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>1EAE2E26-1C07-D3E2-7299-DF9FADDC8B79</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_comanda" id="1A5E316E-8D00-3676-4CB4-CACAB14217CC">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>2A0730B9-D80C-0AA9-A63B-39BDE078477F</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="total_comanda &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="D21C45A1-2BBB-C769-FC70-A5D44A606EE1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>FFE6E956-7B5D-F2DA-045A-5E24627FAC2B</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E1496E0-6F29-A7A6-E5C4-368BE9518AF0" referredColumn="D67BB0F2-7EF5-75CD-D1F9-B656AD6E9A92"/>
+</associations>
+</Column>
+<Column name="angajat_id" id="F233E810-5880-0621-A986-AC9C83C587CD">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>C4112E2C-D55E-3D92-19A8-B22BCF530E3A</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA194D5F-7D62-2B45-3204-0A5C9841CB61" referredColumn="80527B19-E1BB-FD17-67C5-C903093B9BDA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1523461-7283-38A4-E1A0-4DC842036FE8" name="comenzi_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>A14DE677-5ABA-0E44-964F-FD18C2A3BAA1</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD791C5C-7F44-DC19-12A6-B92AFA44D2A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16437AE4-EDC5-B67B-8DB7-C738858092FD" name="angajati_comenzi_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>6B91C02B-2EAB-1CEF-ABF0-E08CCD44514C</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F233E810-5880-0621-A986-AC9C83C587CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3099FF8C-D4D4-2922-E663-8C734A5E1C03" name="clienti_comenzi_fk">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-10 00:58:24 UTC</createdTime>
+<generatorID>4BFA3CBD-8491-F30C-8B70-C48A941012DE</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D21C45A1-2BBB-C769-FC70-A5D44A606EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

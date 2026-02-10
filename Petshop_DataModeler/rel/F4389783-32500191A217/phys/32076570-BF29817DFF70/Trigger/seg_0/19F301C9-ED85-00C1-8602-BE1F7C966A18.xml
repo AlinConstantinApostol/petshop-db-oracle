@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_card_data_emitere" directorySegmentName="seg_0" id="19F301C9-ED85-00C1-8602-BE1F7C966A18">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:55:25 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF :new.data_emitere < SYSDATE THEN
+    RAISE_APPLICATION_ERROR(-20001,
+      'Data de emitere invalida: ' || TO_CHAR(:new.data_emitere, 'DD.MM.YYYY') ||
+      ' trebuie sa fie cel putin data curenta.');
+  END IF;
+END;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>BFBE5BE5-4F29-0E95-4B2C-B3062CA554CC</table>
+</TriggerOraclev10g>

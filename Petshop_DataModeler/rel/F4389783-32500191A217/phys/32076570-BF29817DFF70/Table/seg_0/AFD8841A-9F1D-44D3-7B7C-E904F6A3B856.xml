@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="angajati" directorySegmentName="seg_0" id="AFD8841A-9F1D-44D3-7B7C-E904F6A3B856">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:02:05 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="angajat_id" id="80527B19-E1BB-FD17-67C5-C903093B9BDA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:02:05 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pozitie" id="90EC326A-6770-5D23-C4CB-FAE4463D3C3F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:02:05 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="A5559ABA-ADEF-5A0E-2A3B-E45CE0111102">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:02:05 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="B3F432F1-5F55-39F0-1FA3-D985E777A6A8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:02:05 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="angajati_PK" id="B314F2E4-A2B5-1428-635E-93CBEAE7CB7B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-23 23:02:05 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

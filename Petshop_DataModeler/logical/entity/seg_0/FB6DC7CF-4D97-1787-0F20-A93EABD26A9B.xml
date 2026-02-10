@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FB6DC7CF-4D97-1787-0F20-A93EABD26A9B" name="clienti">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 06:35:11 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="client_id" id="2E4B0924-7DB1-4C69-D28E-38EB39D3F6B4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 07:36:30 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="0B3FD39E-8605-F1AD-CA92-7CE6601CBF95">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 07:37:47 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="24B6971F-7D5A-5C2E-B34E-FCDA0AED134E">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 07:38:29 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="4BB3BB93-4A8D-D824-9E22-F715CFD9DFD3">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 07:39:24 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71C8718C-B40F-FA78-B4E2-E78E1E170FA7" name="clienti PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 07:36:52 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2E4B0924-7DB1-4C69-D28E-38EB39D3F6B4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3ACB3F20-0A40-4B08-B1AB-D8DB2AE72ADC" name="email UK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 07:50:31 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<newElementsIDs>4BB3BB93-4A8D-D824-9E22-F715CFD9DFD3</newElementsIDs>
+<usedAttributes>
+<attributeRef>4BB3BB93-4A8D-D824-9E22-F715CFD9DFD3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

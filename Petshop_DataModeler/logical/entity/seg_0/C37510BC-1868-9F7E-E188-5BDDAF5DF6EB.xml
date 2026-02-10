@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C37510BC-1868-9F7E-E188-5BDDAF5DF6EB" name="comenzi">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 11:37:30 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comanda_id" id="20399BF6-BEBE-B510-2CBE-E832937BC06C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 11:37:45 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_comanda" id="1EAE2E26-1C07-D3E2-7299-DF9FADDC8B79">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 11:38:34 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_comanda" id="2A0730B9-D80C-0AA9-A63B-39BDE078477F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 11:40:36 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="total_comanda &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_id" id="FFE6E956-7B5D-F2DA-045A-5E24627FAC2B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-27 12:29:33 UTC</createdTime>
+<generatorID>4BFA3CBD-8491-F30C-8B70-C48A941012DE</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<referedAttribute>2E4B0924-7DB1-4C69-D28E-38EB39D3F6B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="angajat_id" id="C4112E2C-D55E-3D92-19A8-B22BCF530E3A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-11-09 23:43:38 UTC</createdTime>
+<generatorID>6B91C02B-2EAB-1CEF-ABF0-E08CCD44514C</generatorID>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<referedAttribute>E040C9F8-89DA-2C9A-18E3-8E9525C10AD6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A14DE677-5ABA-0E44-964F-FD18C2A3BAA1" name="comenzi PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2025-10-26 11:38:30 UTC</createdTime>
+<ownerDesignName>Petshop_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="F4389783-5F08-9286-4426-32500191A217" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>20399BF6-BEBE-B510-2CBE-E832937BC06C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
